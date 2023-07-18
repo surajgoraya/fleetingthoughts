@@ -1,0 +1,49 @@
+:root {
+    /*https://coolors.co/222222-ffffff-ff5e5b-47a8bd-80ab82*/
+    --background-colour: #222222;
+    --background-colour-2: #5e5d5d;
+    --text-colour: #FFFFFF;
+    --primary: #FF5E5B;
+    --secondary: #47A8BD;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-colour);
+    background-color: var(--background-colour);
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    font-family: 'Victor Mono', monospace;
+
+    color: var(--primary);
+    text-decoration: none;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 400ms;
+}
+
+a:hover, a:focus {
+    color: var(--secondary);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.menu {
+    font-weight: 800;
+    padding: 1rem;
+}
+.centered {
+    justify-content: center;
+    align-items: center;
+}
